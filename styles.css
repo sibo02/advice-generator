@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color:  hsl(218, 23%, 16%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card{
+    background-color: hsl(217, 19%, 24%);
+    padding: 2rem;
+    border-radius: 1rem;
+    
+    
+}
+.advice-number{
+    color:  hsl(150, 100%, 66%);
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+.advice-text{
+    color: hsl(193, 38%, 86%);
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+.divider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 1rem 0;
+    border: none;
+    
+
+}
+.divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid hsl(217, 19%, 38%);
+}
+.dice-btn{
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow 0.3s;
+}
+.dice-btn:hover{
+    box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+@media (max-width: 375px) {
+    .card{
+        padding: 1rem;
+    }
+    .advice-text{
+        font-size: 1rem;
+    }
+    .divider{
+        gap: 0.5rem;
+    }
+    .divider img {
+    content: url('pattern-divider-mobile.svg');
+}
+}
